@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lifoModal pure javascript modal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <ul>
+        <li>
+            <p>Custom modal box</p>
+            <input type="button" id="demo1" value="Try me!"/>
+        </li>
+        <li >
+            <p>Overrided alert box</p>
+            <input type="button" id="demo2" value="Try me!"/>
+        </li>
+    </ul>
+
+
+    <script src="js/lifoModal.js"></script>
+    
+    <script type="text/javascript">
+
+    	document.querySelector("#demo1")
+        .addEventListener("click", function() {
+        	
+        	var lifomodal = lifoModal(
+        		{ 
+        			title:    "Custom modal box",
+        			bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id orci ultrices leo ullamcorper euismod eget vestibulum mi. ",        			
+        		}, 
+
+        		function(){
+        			console.log("modal ok");
+        		}, 
+        		function(){
+        			console.log("modal close");
+        		}
+        	).open();
+        	//lifomodal.close();
+        	
+
+        });
+
+        document.querySelector("#demo2")
+        .addEventListener("click", function() {
+        	
+        	alert("Request Seccess");
+
+        });
+        
+    </script>
+</body>
+</html>

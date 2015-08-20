@@ -1,0 +1,92 @@
+/**
+* @file style.css
+* @author Foysal Mamun
+* @github https://github.com/foysal-mamun
+* @css-for IE 5, IE 6, IE 7, IE 8, Safari 3, Safari 4, Firefox 2, Firefox 3
+*/
+
+/**
+* @section Reset styles
+* These styles reset the default style sheet that comes with the user agent.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* Reset default button styling.
+*/
+button {
+    cursor: pointer;
+}
+/**
+* @section End Reset styles
+*/
+
+#itsmodal {
+    display: none;
+    color: #252525;
+    -webkit-font-smoothing: antialiased;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#itsmodal .title {
+	margin:0;
+	background-color:#3073BB;
+	color:#FFF;
+	border-bottom:1px solid #000;
+	padding: .5em;
+	font-size: 1em;
+}
+
+#itsmodal .overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    z-index: 20;
+}
+
+#itsmodal .content {
+    position: relative;
+    z-index: 21;
+    background: #fff;
+    opacity: 1.0;
+    margin: 10% auto 10% auto;
+    border-radius: 5px;
+}
+
+#itsmodal .body {
+    font-size: 1.2em;
+    margin: .5em;
+    text-align: center;
+}
+#itsmodal .body p {
+    margin: 0 0 10px 0;
+}
+
+#itsmodal .action {
+	text-align: right;
+	padding: 7px;
+}
+
+#itsmodal .action button {
+    border: 1px solid #ccc;
+    padding: .5em;
+    border-radius: 5px;
+    min-width: 80px;
+    background: #fff;
+}
+
+#itsmodal .action .ok {
+    margin-right: 10px;
+}
