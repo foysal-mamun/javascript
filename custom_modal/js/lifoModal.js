@@ -36,7 +36,7 @@
 		var init = function(configOptoins, onOk, onClose) {
 
 			// remove if modal elements already exists 
-			var oldBox = document.getElementById('itsmodal');
+			var oldBox = document.getElementById('lifomodal');
 			oldBox && document.body.removeChild(oldBox);
 			
 			// reassign settings options
@@ -80,7 +80,7 @@
 		 */
 		var build = function() {
 			
-			modalBox    = createElement('div',    '', '', 'itsmodal');
+			modalBox    = createElement('div',    '', '', 'lifomodal');
             
             var overlay = createElement('div',    'overlay');
             content     = createElement('div',    'content'),

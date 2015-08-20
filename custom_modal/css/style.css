@@ -25,7 +25,7 @@ button {
 * @section End Reset styles
 */
 
-#itsmodal {
+#lifomodal {
     display: none;
     color: #252525;
     -webkit-font-smoothing: antialiased;
@@ -36,7 +36,7 @@ button {
     height: 100%;
 }
 
-#itsmodal .title {
+#lifomodal .title {
 	margin:0;
 	background-color:#3073BB;
 	color:#FFF;
@@ -45,7 +45,7 @@ button {
 	font-size: 1em;
 }
 
-#itsmodal .overlay {
+#lifomodal .overlay {
     position: fixed;
     top: 0;
     height: 100%;
@@ -56,7 +56,7 @@ button {
     z-index: 20;
 }
 
-#itsmodal .content {
+#lifomodal .content {
     position: relative;
     z-index: 21;
     background: #fff;
@@ -65,21 +65,21 @@ button {
     border-radius: 5px;
 }
 
-#itsmodal .body {
+#lifomodal .body {
     font-size: 1.2em;
     margin: .5em;
     text-align: center;
 }
-#itsmodal .body p {
+#lifomodal .body p {
     margin: 0 0 10px 0;
 }
 
-#itsmodal .action {
+#lifomodal .action {
 	text-align: right;
 	padding: 7px;
 }
 
-#itsmodal .action button {
+#lifomodal .action button {
     border: 1px solid #ccc;
     padding: .5em;
     border-radius: 5px;
@@ -87,6 +87,6 @@ button {
     background: #fff;
 }
 
-#itsmodal .action .ok {
+#lifomodal .action .ok {
     margin-right: 10px;
 }
